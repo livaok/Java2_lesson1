@@ -3,6 +3,6 @@ package animals;
 /**
  * @author liva
  */
-public interface Jump {
-	void jump();
+public enum Gender {
+	MALE, FEMALE
 }

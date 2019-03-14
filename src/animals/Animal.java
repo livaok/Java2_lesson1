@@ -1,27 +1,35 @@
 package animals;
 
+import behavior.Jump;
+import behavior.Run;
+
 /**
  * @author liva
  */
 
-public abstract class Animal {
+public abstract class Animal implements Run, Jump {
 
-	private int ageValue;
-	private int speedValue;
+	private String name;
+	private Gender gender;
 
-	public int getAgeValue() {
-		return ageValue;
+	public Animal(String name, Gender gender){
+		this.name = name;
+		this.gender = gender;
 	}
 
-	public void setAgeValue(int ageValue) {
-		this.ageValue = ageValue;
+	public String getName() {
+		return name;
 	}
 
-	public int getSpeedValue() {
-		return speedValue;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public void setSpeedValue(int speedValue) {
-		this.speedValue = speedValue;
+	public Gender getGender() {
+		return gender;
+	}
+
+	public void setGender(Gender gender) {
+		this.gender = gender;
 	}
 }

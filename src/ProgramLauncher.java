@@ -1,5 +1,5 @@
-import animals.Animal;
-import animals.Cat;
+import animals.*;
+
 
 /**
  * @author liva
@@ -7,8 +7,9 @@ import animals.Cat;
 public class ProgramLauncher {
 
 	public static void main(String[] args) {
-		Animal cat = new Cat();
 
-		
+		Course course = new Course(20000, 1);
+		Team cats = new Team(new Cat("a", Gender.FEMALE), new Cat("b", Gender.MALE));
+		course.doIt(cats);
 	}
 }
